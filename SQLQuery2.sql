@@ -1,0 +1,1 @@
+﻿INSERT INTO Students (name, surname) VALUES (N'Вася', 'ПУПКИН')
