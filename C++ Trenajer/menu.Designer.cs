@@ -364,7 +364,7 @@
             this.MinimumSize = new System.Drawing.Size(840, 643);
             this.Name = "menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "menu";
+            this.Text = "C++";
             this.Load += new System.EventHandler(this.menu_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menu_MouseDown);
             this.siticonePanel1.ResumeLayout(false);

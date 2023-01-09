@@ -26,7 +26,9 @@ namespace C___Trenajer.UC_PAGES
             DialogResult result = MessageBox.Show("Завершить процесс?", "Подтвердите действие", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                Application.Exit();
+                rating rt = new rating();
+                rt.Show();
+
             }
             else
             {

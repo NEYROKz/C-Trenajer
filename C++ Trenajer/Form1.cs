@@ -17,6 +17,7 @@ namespace C___Trenajer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+ 
             siticoneShadowForm1.SetShadowForm(this);
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
 

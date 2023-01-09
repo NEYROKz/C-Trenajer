@@ -287,6 +287,7 @@ namespace C___Trenajer
             this.MinimumSize = new System.Drawing.Size(832, 661);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C++";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainWindow_MouseDown_1);
             this.siticonePanel4.ResumeLayout(false);
