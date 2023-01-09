@@ -155,5 +155,33 @@ namespace C___Trenajer
 
         }
 
+        private void siticoneButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticonePanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void collapsing1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void MainWindow_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            base.Capture = false;
+            Message m = Message.Create(base.Handle, 0xa1, new IntPtr(2), IntPtr.Zero);
+            this.WndProc(ref m);
+        }
+
+
     }
 }

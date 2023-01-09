@@ -35,7 +35,6 @@
             this.adminlabel = new System.Windows.Forms.Label();
             this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticoneButton_1page = new Siticone.Desktop.UI.WinForms.SiticoneButton();
-            this.siticoneButton_2page = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelname = new System.Windows.Forms.Label();
             this.labelsurname = new System.Windows.Forms.Label();
@@ -47,23 +46,23 @@
             this.button_delete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.button_save = new System.Windows.Forms.Button();
             this.siticonePanel_pages = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.siticonePanel5 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.siticonePanel1.SuspendLayout();
             this.siticonePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.siticonePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.siticonePanel3.SuspendLayout();
             this.siticonePanel_pages.SuspendLayout();
             this.siticonePanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // exit
@@ -121,7 +120,6 @@
             // siticonePanel4
             // 
             this.siticonePanel4.Controls.Add(this.siticoneButton_1page);
-            this.siticonePanel4.Controls.Add(this.siticoneButton_2page);
             this.siticonePanel4.Location = new System.Drawing.Point(1, 1);
             this.siticonePanel4.Name = "siticonePanel4";
             this.siticonePanel4.ShadowDecoration.Depth = 5;
@@ -152,28 +150,6 @@
             this.siticoneButton_1page.Text = "1 Страница";
             this.siticoneButton_1page.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneButton_1page.TextOffset = new System.Drawing.Point(15, 0);
-            // 
-            // siticoneButton_2page
-            // 
-            this.siticoneButton_2page.ButtonMode = Siticone.Desktop.UI.WinForms.Enums.ButtonMode.RadioButton;
-            this.siticoneButton_2page.CheckedState.CustomBorderColor = System.Drawing.Color.RoyalBlue;
-            this.siticoneButton_2page.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneButton_2page.CustomBorderThickness = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.siticoneButton_2page.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton_2page.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.siticoneButton_2page.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.siticoneButton_2page.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.siticoneButton_2page.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneButton_2page.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.siticoneButton_2page.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton_2page.Location = new System.Drawing.Point(0, 305);
-            this.siticoneButton_2page.Name = "siticoneButton_2page";
-            this.siticoneButton_2page.PressedDepth = 0;
-            this.siticoneButton_2page.Size = new System.Drawing.Size(141, 55);
-            this.siticoneButton_2page.TabIndex = 13;
-            this.siticoneButton_2page.Text = "2 Страница";
-            this.siticoneButton_2page.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.siticoneButton_2page.TextOffset = new System.Drawing.Point(15, 0);
             // 
             // dataGridView1
             // 
@@ -295,6 +271,16 @@
             this.siticonePanel2.Size = new System.Drawing.Size(467, 151);
             this.siticonePanel2.TabIndex = 17;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::C___Trenajer.Properties.Resources._2236301;
+            this.pictureBox1.Location = new System.Drawing.Point(37, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // siticonePanel3
             // 
             this.siticonePanel3.Controls.Add(this.button_save);
@@ -364,16 +350,6 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::C___Trenajer.Properties.Resources._2236301;
-            this.pictureBox1.Location = new System.Drawing.Point(37, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,6 +373,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.siticonePanel2.ResumeLayout(false);
             this.siticonePanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.siticonePanel3.ResumeLayout(false);
             this.siticonePanel3.PerformLayout();
             this.siticonePanel_pages.ResumeLayout(false);
@@ -404,7 +381,6 @@
             this.siticonePanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -431,7 +407,6 @@
         private System.Windows.Forms.Button button_save;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel_pages;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel5;
-        private Siticone.Desktop.UI.WinForms.SiticoneButton siticoneButton_2page;
         private Siticone.Desktop.UI.WinForms.SiticoneButton siticoneButton_1page;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel4;
         private System.Windows.Forms.PictureBox pictureBox3;

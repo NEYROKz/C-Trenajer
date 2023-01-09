@@ -20,6 +20,10 @@ namespace C___Trenajer
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new authorization());
             
+
         }
+
+        
     }
+ 
 }

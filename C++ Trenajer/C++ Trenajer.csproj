@@ -125,12 +125,6 @@
     <Compile Include="UC_PAGES\UC_PAGE4.Designer.cs">
       <DependentUpon>UC_PAGE4.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_PAGES\UC_PAGE5.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_PAGES\UC_PAGE5.Designer.cs">
-      <DependentUpon>UC_PAGE5.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="authorization.resx">
       <DependentUpon>authorization.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,9 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_PAGES\UC_PAGE4.resx">
       <DependentUpon>UC_PAGE4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_PAGES\UC_PAGE5.resx">
-      <DependentUpon>UC_PAGE5.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
