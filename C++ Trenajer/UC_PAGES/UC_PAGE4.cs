@@ -33,6 +33,14 @@ namespace C___Trenajer.UC_PAGES
 
             }
 
+            if (textBox1.Text == answers)
+            {
+                DataForm.kz = DataForm.kz + 1;
+            }
+            else
+            {
+                ;
+            }
 
         }
 
