@@ -25,5 +25,10 @@ namespace C___Trenajer
 
         
     }
+
+    public static class DataForm
+    {
+        public static int kz = 0;
+    }
  
 }

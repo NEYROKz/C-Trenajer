@@ -182,6 +182,41 @@ namespace C___Trenajer
             this.WndProc(ref m);
         }
 
+        private void siticoneButton5_CheckedChanged(object sender, EventArgs e)
+        {
+            if(siticoneButton5.Checked)
+            {
+                uC_1PAGE11.BringToFront();
+            }
+        }
 
+        private void siticoneButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (siticoneButton6.Checked)
+            {
+                uC_2PAGE2.BringToFront();
+            }
+        }
+
+        private void siticoneButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (siticoneButton7.Checked)
+            {
+                uC_PAGE32.BringToFront();
+            }
+        }
+
+        private void siticoneButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (siticoneButton8.Checked)
+            {
+                uC_PAGE42.BringToFront();
+            }
+        }
+
+        private void uC_1PAGE11_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

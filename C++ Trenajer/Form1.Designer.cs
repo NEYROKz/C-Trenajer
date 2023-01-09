@@ -33,6 +33,10 @@ namespace C___Trenajer
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.siticonePanel4 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.uC_1PAGE11 = new C___Trenajer.UC_PAGES.UC_1PAGE1();
+            this.uC_PAGE42 = new C___Trenajer.UC_PAGES.UC_PAGE4();
+            this.uC_PAGE32 = new C___Trenajer.UC_PAGES.UC_PAGE3();
+            this.uC_2PAGE2 = new C___Trenajer.UC_2PAGE();
             this.siticoneButton5 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.siticoneButton6 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
             this.siticoneButton7 = new Siticone.Desktop.UI.WinForms.SiticoneButton();
@@ -42,6 +46,7 @@ namespace C___Trenajer
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.exit1 = new System.Windows.Forms.Label();
             this.collapsing1 = new System.Windows.Forms.Label();
+            this.siticonePanel4.SuspendLayout();
             this.siticonePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -63,10 +68,47 @@ namespace C___Trenajer
             this.siticonePanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticonePanel4.Location = new System.Drawing.Point(192, 92);
+            this.siticonePanel4.Controls.Add(this.uC_1PAGE11);
+            this.siticonePanel4.Controls.Add(this.uC_PAGE42);
+            this.siticonePanel4.Controls.Add(this.uC_PAGE32);
+            this.siticonePanel4.Controls.Add(this.uC_2PAGE2);
+            this.siticonePanel4.Location = new System.Drawing.Point(196, 92);
             this.siticonePanel4.Name = "siticonePanel4";
-            this.siticonePanel4.Size = new System.Drawing.Size(603, 568);
+            this.siticonePanel4.Size = new System.Drawing.Size(639, 569);
             this.siticonePanel4.TabIndex = 2;
+            // 
+            // uC_1PAGE11
+            // 
+            this.uC_1PAGE11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_1PAGE11.Location = new System.Drawing.Point(0, 0);
+            this.uC_1PAGE11.Name = "uC_1PAGE11";
+            this.uC_1PAGE11.Size = new System.Drawing.Size(639, 569);
+            this.uC_1PAGE11.TabIndex = 0;
+            this.uC_1PAGE11.Load += new System.EventHandler(this.uC_1PAGE11_Load);
+            // 
+            // uC_PAGE42
+            // 
+            this.uC_PAGE42.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_PAGE42.Location = new System.Drawing.Point(0, 0);
+            this.uC_PAGE42.Name = "uC_PAGE42";
+            this.uC_PAGE42.Size = new System.Drawing.Size(639, 569);
+            this.uC_PAGE42.TabIndex = 3;
+            // 
+            // uC_PAGE32
+            // 
+            this.uC_PAGE32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_PAGE32.Location = new System.Drawing.Point(0, 0);
+            this.uC_PAGE32.Name = "uC_PAGE32";
+            this.uC_PAGE32.Size = new System.Drawing.Size(639, 569);
+            this.uC_PAGE32.TabIndex = 2;
+            // 
+            // uC_2PAGE2
+            // 
+            this.uC_2PAGE2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_2PAGE2.Location = new System.Drawing.Point(0, 0);
+            this.uC_2PAGE2.Name = "uC_2PAGE2";
+            this.uC_2PAGE2.Size = new System.Drawing.Size(639, 569);
+            this.uC_2PAGE2.TabIndex = 1;
             // 
             // siticoneButton5
             // 
@@ -90,6 +132,7 @@ namespace C___Trenajer
             this.siticoneButton5.Text = "1 Задание";
             this.siticoneButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneButton5.TextOffset = new System.Drawing.Point(15, 0);
+            this.siticoneButton5.CheckedChanged += new System.EventHandler(this.siticoneButton5_CheckedChanged);
             // 
             // siticoneButton6
             // 
@@ -112,6 +155,7 @@ namespace C___Trenajer
             this.siticoneButton6.Text = "2 Задание";
             this.siticoneButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneButton6.TextOffset = new System.Drawing.Point(15, 0);
+            this.siticoneButton6.CheckedChanged += new System.EventHandler(this.siticoneButton6_CheckedChanged);
             // 
             // siticoneButton7
             // 
@@ -134,6 +178,7 @@ namespace C___Trenajer
             this.siticoneButton7.Text = "3 Задание";
             this.siticoneButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneButton7.TextOffset = new System.Drawing.Point(15, 0);
+            this.siticoneButton7.CheckedChanged += new System.EventHandler(this.siticoneButton7_CheckedChanged);
             this.siticoneButton7.Click += new System.EventHandler(this.siticoneButton7_Click);
             // 
             // siticoneButton8
@@ -157,6 +202,7 @@ namespace C___Trenajer
             this.siticoneButton8.Text = "4 Задание";
             this.siticoneButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneButton8.TextOffset = new System.Drawing.Point(15, 0);
+            this.siticoneButton8.CheckedChanged += new System.EventHandler(this.siticoneButton8_CheckedChanged);
             // 
             // textBox1
             // 
@@ -206,7 +252,7 @@ namespace C___Trenajer
             this.exit1.AutoSize = true;
             this.exit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.exit1.ForeColor = System.Drawing.Color.White;
-            this.exit1.Location = new System.Drawing.Point(772, 9);
+            this.exit1.Location = new System.Drawing.Point(805, 9);
             this.exit1.Name = "exit1";
             this.exit1.Size = new System.Drawing.Size(15, 13);
             this.exit1.TabIndex = 3;
@@ -218,7 +264,7 @@ namespace C___Trenajer
             this.collapsing1.AutoSize = true;
             this.collapsing1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.collapsing1.ForeColor = System.Drawing.Color.White;
-            this.collapsing1.Location = new System.Drawing.Point(756, 9);
+            this.collapsing1.Location = new System.Drawing.Point(788, 9);
             this.collapsing1.Name = "collapsing1";
             this.collapsing1.Size = new System.Drawing.Size(11, 13);
             this.collapsing1.TabIndex = 4;
@@ -229,7 +275,7 @@ namespace C___Trenajer
             // 
             this.AllowDrop = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(54)))), ((int)(((byte)(53)))));
-            this.ClientSize = new System.Drawing.Size(798, 661);
+            this.ClientSize = new System.Drawing.Size(832, 661);
             this.Controls.Add(this.collapsing1);
             this.Controls.Add(this.exit1);
             this.Controls.Add(this.siticonePanel4);
@@ -237,12 +283,13 @@ namespace C___Trenajer
             this.Controls.Add(this.siticonePanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(798, 661);
-            this.MinimumSize = new System.Drawing.Size(798, 661);
+            this.MaximumSize = new System.Drawing.Size(832, 661);
+            this.MinimumSize = new System.Drawing.Size(832, 661);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainWindow_MouseDown_1);
+            this.siticonePanel4.ResumeLayout(false);
             this.siticonePanel3.ResumeLayout(false);
             this.siticonePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -281,5 +328,9 @@ namespace C___Trenajer
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel3;
         private System.Windows.Forms.Label exit1;
         private System.Windows.Forms.Label collapsing1;
+        private UC_PAGES.UC_PAGE4 uC_PAGE42;
+        private UC_PAGES.UC_PAGE3 uC_PAGE32;
+        private UC_2PAGE uC_2PAGE2;
+        private UC_PAGES.UC_1PAGE1 uC_1PAGE11;
     }
 }

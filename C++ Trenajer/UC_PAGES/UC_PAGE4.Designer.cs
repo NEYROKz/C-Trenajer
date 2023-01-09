@@ -50,9 +50,10 @@
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(27, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(579, 447);
+            this.label1.Size = new System.Drawing.Size(579, 425);
             this.label1.TabIndex = 17;
             this.label1.TextChanged += new System.EventHandler(this.label1_TextChanged);
             this.label1.Click += new System.EventHandler(this.label1_Click_1);

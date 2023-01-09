@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 using System.Configuration;
 
 namespace C___Trenajer.UC_PAGES
@@ -14,6 +15,7 @@ namespace C___Trenajer.UC_PAGES
     public partial class UC_PAGE4 : UserControl
     {
         string answers;
+
         public UC_PAGE4()
         {
             InitializeComponent();
@@ -30,6 +32,8 @@ namespace C___Trenajer.UC_PAGES
             {
 
             }
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -82,6 +86,9 @@ namespace C___Trenajer.UC_PAGES
 
         private void UC_PAGE4_Load(object sender, EventArgs e)
         {
+
+
+
             string s;                         
             string[] tasks = new string[7];
             tasks[0] = "Определите сумму цифр, которые выведет программа при вызове F(60) ? \n" +
