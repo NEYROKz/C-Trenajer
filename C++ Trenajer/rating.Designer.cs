@@ -128,9 +128,8 @@
             this.secondgrade_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.secondgrade_label.Location = new System.Drawing.Point(113, 89);
             this.secondgrade_label.Name = "secondgrade_label";
-            this.secondgrade_label.Size = new System.Drawing.Size(38, 23);
+            this.secondgrade_label.Size = new System.Drawing.Size(0, 23);
             this.secondgrade_label.TabIndex = 9;
-            this.secondgrade_label.Text = "0/1";
             // 
             // thirdgrade_label
             // 
@@ -138,9 +137,8 @@
             this.thirdgrade_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.thirdgrade_label.Location = new System.Drawing.Point(113, 125);
             this.thirdgrade_label.Name = "thirdgrade_label";
-            this.thirdgrade_label.Size = new System.Drawing.Size(38, 23);
+            this.thirdgrade_label.Size = new System.Drawing.Size(0, 23);
             this.thirdgrade_label.TabIndex = 10;
-            this.thirdgrade_label.Text = "0/1";
             // 
             // fourthgrade_label
             // 
@@ -148,9 +146,8 @@
             this.fourthgrade_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.fourthgrade_label.Location = new System.Drawing.Point(113, 160);
             this.fourthgrade_label.Name = "fourthgrade_label";
-            this.fourthgrade_label.Size = new System.Drawing.Size(38, 23);
+            this.fourthgrade_label.Size = new System.Drawing.Size(0, 23);
             this.fourthgrade_label.TabIndex = 11;
-            this.fourthgrade_label.Text = "0/1";
             // 
             // rating
             // 

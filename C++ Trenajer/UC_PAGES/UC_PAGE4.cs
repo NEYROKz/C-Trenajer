@@ -32,17 +32,10 @@ namespace C___Trenajer.UC_PAGES
             }
             else
             {
-
-            }
-
-            if (textBox1.Text == answers)
-            {
-                DataForm.kz = DataForm.kz + 1;
-            }
-            else
-            {
                 ;
             }
+
+  
 
         }
 
@@ -269,6 +262,19 @@ namespace C___Trenajer.UC_PAGES
         private void label1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == answers)
+            {
+                MessageBox.Show("Вверно");
+                DataForm.grade4 = DataForm.grade4 + 1;
+            }
+            else
+            {
+                MessageBox.Show("Неверно");
+            }
         }
     }
 }

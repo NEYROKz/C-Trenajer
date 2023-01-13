@@ -143,7 +143,7 @@ namespace C___Trenajer
             {
                 MessageBox.Show("Вверно");
                 right_answers++;
-                DataForm.kz = DataForm.kz + 1;
+                DataForm.grade2 = DataForm.grade2 + 1;
             }
             else
             {
