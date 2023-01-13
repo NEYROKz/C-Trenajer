@@ -29,6 +29,11 @@ namespace C___Trenajer
     public static class DataForm
     {
         public static int kz = 0;
+        public static int grade1 = 0;
+        public static int grade2 = 0;
+        public static int grade3 = 0;
+        public static int grade4 = 0;
+
     }
  
 }

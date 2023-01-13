@@ -71,6 +71,22 @@ namespace C___Trenajer
             
         }
 
+        public void openConnection()
+        {
+            if (sqlConnection.State == System.Data.ConnectionState.Closed)
+            {
+                sqlConnection.Open();
+            }
+        }
+
+        public void closeConnection()
+        {
+            if (sqlConnection.State == System.Data.ConnectionState.Open)
+            {
+                sqlConnection.Close();
+            }
+        }
+
         private void login_TextChanged(object sender, EventArgs e)
         {
             

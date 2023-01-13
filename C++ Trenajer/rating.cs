@@ -7,17 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace C___Trenajer
 {
     public partial class rating : Form
     {
+        private SqlConnection sqlConnection = null;
+
         public rating()
         {
             InitializeComponent();
             this.MouseDown += new MouseEventHandler(rating_MouseDown);
+            
+            
         }
 
+  
+        
         private void label5_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -32,7 +40,37 @@ namespace C___Trenajer
 
         private void rating_Load(object sender, EventArgs e)
         {
+            firstgrade_label.Text = Convert.ToString(DataForm.grade1);
+            secondgrade_label.Text = Convert.ToString(DataForm.grade2);
+            thirdgrade_label.Text = Convert.ToString(DataForm.grade3);
+            fourthgrade_label.Text = Convert.ToString(DataForm.grade4);
 
         }
+        public void openConnection()
+        {
+            if (sqlConnection.State == System.Data.ConnectionState.Closed)
+            {
+                sqlConnection.Open();
+            }
+        }
+
+        public void closeConnection()
+        {
+            if (sqlConnection.State == System.Data.ConnectionState.Open)
+            {
+                sqlConnection.Close();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+  
+        
+
+        
+
     }
 }

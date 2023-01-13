@@ -103,6 +103,7 @@
             this.siticonePanel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.siticonePanel1.Size = new System.Drawing.Size(840, 131);
             this.siticonePanel1.TabIndex = 13;
+            this.siticonePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticonePanel1_Paint);
             this.siticonePanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.siticonePanel1_MouseDown);
             // 
             // adminlabel

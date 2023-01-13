@@ -162,7 +162,6 @@ namespace C___Trenajer.UC_PAGES
                         "return n; \n" +
                         "} \n";
 
-            //массив ответов
             string s;
             string[] answer = new string[13];
             answer[0] = "360";
@@ -181,7 +180,6 @@ namespace C___Trenajer.UC_PAGES
 
 
 
-            // вывод вопросов 
             Random rnd = new Random();
             int u;
             u = rnd.Next(13);
@@ -198,7 +196,7 @@ namespace C___Trenajer.UC_PAGES
             {
                 MessageBox.Show("Вверно");
                 right_answers++;
-                DataForm.kz = DataForm.kz + 1;
+                DataForm.grade1 = DataForm.grade1 + 1;
             }
             else
             {

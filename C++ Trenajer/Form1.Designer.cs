@@ -315,7 +315,7 @@ namespace C___Trenajer
         private UC_PAGES.UC_PAGE3 uC_PAGE31;
         private UC_PAGES.UC_PAGE4 uC_PAGE41;
         private System.Windows.Forms.Label label1;
-        private UC_PAGES.UC_1PAGE uC_1PAGE1;
+        private UC_PAGES.UC_1PAGE1 uC_1PAGE1;
         private System.Windows.Forms.Label collapsing;
         private Siticone.Desktop.UI.WinForms.SiticoneShadowForm siticoneShadowForm1;
         private System.Windows.Forms.TextBox textBox2;
