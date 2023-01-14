@@ -43,10 +43,12 @@ namespace C___Trenajer
                 command.Connection = sqlConnection;
                 command.Parameters.AddWithValue("name", login.Text);
                 command.Parameters.AddWithValue("surname", password.Text);
-                command.ExecuteNonQuery();
-            
 
-            this.Hide();
+               
+                command.ExecuteNonQuery();
+
+
+                this.Hide();
             MainWindow mainwindow = new MainWindow();
             mainwindow.Show();
 

@@ -29,11 +29,10 @@ namespace C___Trenajer.UC_PAGES
 
         private void UC_1PAGE1_Load(object sender, EventArgs e)
         {
+            
 
 
 
-
-            // массив вопросов
             string k;
             string[] name_tasks = new string[20];
             name_tasks[0] = "Алгоритм вычисления значения функции F(n), задан следующими соотношениями: \n" +
@@ -164,19 +163,19 @@ namespace C___Trenajer.UC_PAGES
 
             string s;
             string[] answer = new string[13];
-            answer[0] = "360";
-            answer[1] = "840";
-            answer[2] = "315";
-            answer[3] = "1";
-            answer[4] = "1";
+            answer[0] = "1";
+            answer[1] = "2";
+            answer[2] = "3";
+            answer[3] = "4";
+            answer[4] = "5";
             answer[5] = "6";
             answer[6] = "7";
             answer[7] = "8";
             answer[8] = "9";
             answer[9] = "10";
-            answer[10] = "10";
-            answer[11] = "10";
-            answer[12] = "10";
+            answer[10] = "11";
+            answer[11] = "12";
+            answer[12] = "13";
 
 
 
@@ -192,6 +191,9 @@ namespace C___Trenajer.UC_PAGES
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Visible = false;
+            button2.Visible = true;
+                
             if (textBox1.Text == answers)
             {
                 MessageBox.Show("Вверно");
@@ -235,6 +237,14 @@ namespace C___Trenajer.UC_PAGES
                 textBox1.ForeColor = Color.Gray;
 
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Ответ";
+            textBox1.ForeColor = Color.Gray;
+            button2.Visible = false;
+            button1.Visible = true;
         }
     }
 }

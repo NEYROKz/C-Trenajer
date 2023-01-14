@@ -28,6 +28,7 @@ namespace C___Trenajer
         
         private void label5_Click(object sender, EventArgs e)
         {
+
             Application.Exit();
         }
 
@@ -44,6 +45,37 @@ namespace C___Trenajer
             secondgrade_label.Text = Convert.ToString(DataForm.grade2);
             thirdgrade_label.Text = Convert.ToString(DataForm.grade3);
             fourthgrade_label.Text = Convert.ToString(DataForm.grade4);
+
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
+
+
+            SqlCommand command = new SqlCommand(
+                "SELECT name, surname FROM Students"
+                , conn);
+
+            try
+            {
+                conn.Open();
+                SqlDataReader readerz = command.ExecuteReader();
+                while (readerz.Read())
+                {
+                    namestudentz.Text = Convert.ToString(readerz["name"]);
+                    namestudentz.AutoSize = true;
+                    surnamestudentz.Text = Convert.ToString(readerz["surname"]);
+                    surnamestudentz.AutoSize = true;
+                }
+                readerz.Close();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
 
         }
         public void openConnection()
@@ -67,10 +99,9 @@ namespace C___Trenajer
            
         }
 
-  
-        
+        private void namestudentz_Click(object sender, EventArgs e)
+        {
 
-        
-
+        }
     }
 }
