@@ -97,7 +97,7 @@ namespace C___Trenajer
 
         private void nameconnect(object sender, EventArgs e)
         {
-            if (login.Text == "Имя")
+            if (login.Text == "Фамилия")
             {
                 login.Text = "";
                 login.ForeColor = Color.Black;
@@ -109,7 +109,7 @@ namespace C___Trenajer
         {
             if (login.Text == "")
             {
-                login.Text = "Имя";
+                login.Text = "Фамилия";
                 login.ForeColor = Color.Gray;
 
             }
@@ -117,7 +117,7 @@ namespace C___Trenajer
 
         private void surnameconnect(object sender, EventArgs e)
         {
-            if (password.Text == "Фамилия")
+            if (password.Text == "Имя")
             {
                 password.Text = "";
                 password.ForeColor = Color.Black;
@@ -129,7 +129,7 @@ namespace C___Trenajer
         {
             if (password.Text == "")
             {
-                password.Text = "Фамилия";
+                password.Text = "Имя";
                 password.ForeColor = Color.Gray;
 
             }

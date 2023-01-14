@@ -191,8 +191,7 @@ namespace C___Trenajer.UC_PAGES
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.Visible = false;
-            button2.Visible = true;
+            
                 
             if (textBox1.Text == answers)
             {
@@ -243,8 +242,7 @@ namespace C___Trenajer.UC_PAGES
         {
             textBox1.Text = "Ответ";
             textBox1.ForeColor = Color.Gray;
-            button2.Visible = false;
-            button1.Visible = true;
+
         }
     }
 }

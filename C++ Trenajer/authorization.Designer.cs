@@ -59,7 +59,7 @@ namespace C___Trenajer
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(184, 47);
             this.login.TabIndex = 3;
-            this.login.Text = "Имя";
+            this.login.Text = "Фамилия";
             this.login.TextChanged += new System.EventHandler(this.login_TextChanged);
             this.login.Enter += new System.EventHandler(this.nameconnect);
             this.login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.login_KeyPress);
@@ -112,7 +112,7 @@ namespace C___Trenajer
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(184, 47);
             this.password.TabIndex = 3;
-            this.password.Text = "Фамилия";
+            this.password.Text = "Имя";
             this.password.TextChanged += new System.EventHandler(this.password_TextChanged);
             this.password.Enter += new System.EventHandler(this.surnameconnect);
             this.password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.password_KeyPress);
