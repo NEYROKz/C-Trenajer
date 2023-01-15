@@ -46,6 +46,7 @@ namespace C___Trenajer
                 command.Connection = sqlConnection;
                 command.Parameters.AddWithValue("name", login.Text);
                 command.Parameters.AddWithValue("surname", password.Text);
+                
 
                
                 command.ExecuteNonQuery();

@@ -153,7 +153,7 @@ namespace C___Trenajer
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         private void siticoneButton7_Click(object sender, EventArgs e)
