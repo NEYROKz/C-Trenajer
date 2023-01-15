@@ -80,7 +80,6 @@ namespace C___Trenajer
                              "G(n) = 2 * F(n–1) + G(n–1), при n >= 2 \n" +
                              "Чему равно значение величины F(5) - G(5) ? В ответе запишите только целое число. \n";
 
-            // ответы
             string k;
             string[] answer = new string[5];
             answer[0] = "1";
@@ -91,11 +90,9 @@ namespace C___Trenajer
 
 
 
-            // вывод вопросов
             Random rnd = new Random();
             int u;
             u = rnd.Next(5);
-            //k = answer[u];
             s = tasks[u];
             k = answer[u];
             label1.Text = s.ToString();
@@ -139,11 +136,14 @@ namespace C___Trenajer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
+            textBox1.ReadOnly = true;
             if (textBox1.Text == answers)
             {
                 MessageBox.Show("Вверно");
                 right_answers++;
                 DataForm.grade2 = DataForm.grade2 + 1;
+                DataForm.allgrades = DataForm.allgrades + 1;
             }
             else
             {

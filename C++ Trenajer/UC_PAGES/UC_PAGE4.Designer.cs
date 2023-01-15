@@ -45,6 +45,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Завершить";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
@@ -81,7 +82,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(268, 504);
+            this.button2.Location = new System.Drawing.Point(445, 504);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(161, 35);
             this.button2.TabIndex = 19;
@@ -93,9 +94,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "UC_PAGE4";
             this.Size = new System.Drawing.Size(636, 582);

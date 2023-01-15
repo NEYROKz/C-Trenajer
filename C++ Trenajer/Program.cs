@@ -33,7 +33,8 @@ namespace C___Trenajer
         public static int grade2 = 0;
         public static int grade3 = 0;
         public static int grade4 = 0;
-
+        public static int allgrades = 0;
+       
     }
  
 }

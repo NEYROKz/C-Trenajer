@@ -47,7 +47,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.surnamestudentz = new System.Windows.Forms.Label();
             this.surnamestudent = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.totalgrades_label = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -118,7 +118,7 @@
             this.firstgrade_label.AutoSize = true;
             this.firstgrade_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.firstgrade_label.ForeColor = System.Drawing.Color.SteelBlue;
-            this.firstgrade_label.Location = new System.Drawing.Point(112, 150);
+            this.firstgrade_label.Location = new System.Drawing.Point(111, 79);
             this.firstgrade_label.Name = "firstgrade_label";
             this.firstgrade_label.Size = new System.Drawing.Size(20, 23);
             this.firstgrade_label.TabIndex = 8;
@@ -129,7 +129,7 @@
             this.secondgrade_label.AutoSize = true;
             this.secondgrade_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.secondgrade_label.ForeColor = System.Drawing.Color.SteelBlue;
-            this.secondgrade_label.Location = new System.Drawing.Point(112, 79);
+            this.secondgrade_label.Location = new System.Drawing.Point(111, 115);
             this.secondgrade_label.Name = "secondgrade_label";
             this.secondgrade_label.Size = new System.Drawing.Size(20, 23);
             this.secondgrade_label.TabIndex = 9;
@@ -140,7 +140,7 @@
             this.thirdgrade_label.AutoSize = true;
             this.thirdgrade_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.thirdgrade_label.ForeColor = System.Drawing.Color.SteelBlue;
-            this.thirdgrade_label.Location = new System.Drawing.Point(112, 115);
+            this.thirdgrade_label.Location = new System.Drawing.Point(112, 150);
             this.thirdgrade_label.Name = "thirdgrade_label";
             this.thirdgrade_label.Size = new System.Drawing.Size(20, 23);
             this.thirdgrade_label.TabIndex = 10;
@@ -240,16 +240,17 @@
             this.surnamestudent.TabIndex = 19;
             this.surnamestudent.Text = "Фамилия:";
             // 
-            // label11
+            // totalgrades_label
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label11.Location = new System.Drawing.Point(233, 183);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(20, 23);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "0";
+            this.totalgrades_label.AutoSize = true;
+            this.totalgrades_label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
+            this.totalgrades_label.ForeColor = System.Drawing.Color.SteelBlue;
+            this.totalgrades_label.Location = new System.Drawing.Point(233, 183);
+            this.totalgrades_label.Name = "totalgrades_label";
+            this.totalgrades_label.Size = new System.Drawing.Size(20, 23);
+            this.totalgrades_label.TabIndex = 20;
+            this.totalgrades_label.Text = "0";
+            this.totalgrades_label.Click += new System.EventHandler(this.totalgrades_label_Click);
             // 
             // label12
             // 
@@ -257,9 +258,9 @@
             this.label12.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
             this.label12.Location = new System.Drawing.Point(248, 183);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 23);
+            this.label12.Size = new System.Drawing.Size(32, 23);
             this.label12.TabIndex = 21;
-            this.label12.Text = "/ 31";
+            this.label12.Text = "/ 4";
             // 
             // rating
             // 
@@ -267,7 +268,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(290, 214);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.totalgrades_label);
             this.Controls.Add(this.surnamestudent);
             this.Controls.Add(this.surnamestudentz);
             this.Controls.Add(this.label10);
@@ -318,7 +319,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label surnamestudentz;
         private System.Windows.Forms.Label surnamestudent;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label totalgrades_label;
         private System.Windows.Forms.Label label12;
     }
 }

@@ -46,6 +46,8 @@ namespace C___Trenajer
             thirdgrade_label.Text = Convert.ToString(DataForm.grade3);
             fourthgrade_label.Text = Convert.ToString(DataForm.grade4);
 
+            totalgrades_label.Text = Convert.ToString(DataForm.allgrades);
+
 
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
 
@@ -100,6 +102,11 @@ namespace C___Trenajer
         }
 
         private void namestudentz_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalgrades_label_Click(object sender, EventArgs e)
         {
 
         }

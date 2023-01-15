@@ -266,10 +266,14 @@ namespace C___Trenajer.UC_PAGES
 
         private void button2_Click(object sender, EventArgs e)
         {
+            button1.Visible = true;
+            button2.Visible = false;
+            textBox1.ReadOnly = true;
             if (textBox1.Text == answers)
             {
                 MessageBox.Show("Вверно");
                 DataForm.grade4 = DataForm.grade4 + 1;
+                DataForm.allgrades = DataForm.allgrades + 1;
             }
             else
             {

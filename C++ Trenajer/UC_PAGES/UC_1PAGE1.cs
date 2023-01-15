@@ -74,7 +74,7 @@ namespace C___Trenajer.UC_PAGES
                 "if (n > 0) \n" +
                 "{ \n" +
                 "cout << ″*″; \n" +
-                "F(n-2);" +
+                "F(n - 2);" +
                 "F(n / 2); \n" +
                 "} \n" +
                 "} \n";
@@ -191,13 +191,15 @@ namespace C___Trenajer.UC_PAGES
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            button1.Enabled = false;
+            textBox1.ReadOnly = true;
                 
             if (textBox1.Text == answers)
             {
                 MessageBox.Show("Вверно");
                 right_answers++;
                 DataForm.grade1 = DataForm.grade1 + 1;
+                DataForm.allgrades = DataForm.allgrades + 1;
             }
             else
             {

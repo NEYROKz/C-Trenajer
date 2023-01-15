@@ -24,6 +24,8 @@ namespace C___Trenajer
     public partial class menu : Form
     {
         private SqlConnection sqlConnection = null;
+        private DataTable dt = new DataTable();
+        private DataSet ds = new DataSet();
 
         int selectedRow;
         public menu()
@@ -31,6 +33,8 @@ namespace C___Trenajer
             InitializeComponent();
             this.MouseDown += new MouseEventHandler(menu_MouseDown);
         }
+
+        
 
         private void adminlabel_Click(object sender, EventArgs e)
         {
@@ -100,11 +104,16 @@ namespace C___Trenajer
         {
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
 
+           
+  
+            
             CreateColumns();
             RefreshDataGrid(dataGridView1);
-
         }
 
+        
+
+      
         public void openConnection()
         {
             if(sqlConnection.State == System.Data.ConnectionState.Closed)
@@ -236,13 +245,15 @@ namespace C___Trenajer
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
         }
 
         private void siticonePanel1_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
+
+        
+      
     }
 }
 
