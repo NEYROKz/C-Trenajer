@@ -104,16 +104,17 @@ namespace C___Trenajer
         {
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
 
-           
-  
-            
+
+
+          
             CreateColumns();
             RefreshDataGrid(dataGridView1);
         }
 
         
+       
+        
 
-      
         public void openConnection()
         {
             if(sqlConnection.State == System.Data.ConnectionState.Closed)

@@ -38,21 +38,24 @@ namespace C___Trenajer
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-          
-                SqlCommand command = new SqlCommand(
-                  $"INSERT INTO [Students] (name, surname) VALUES (@name, @surname) ",
-                  sqlConnection);
+            DataForm.surnamez = login.Text;
+            DataForm.namez = password.Text;
 
-                command.Connection = sqlConnection;
-                command.Parameters.AddWithValue("name", login.Text);
-                command.Parameters.AddWithValue("surname", password.Text);
-                
+            /*SqlCommand command = new SqlCommand(
+              $"INSERT INTO [Students] (name, surname) VALUES (@name, @surname) ",
+              sqlConnection);
 
-               
-                command.ExecuteNonQuery();
+            command.Connection = sqlConnection;
+            command.Parameters.AddWithValue("name", login.Text);
+            command.Parameters.AddWithValue("surname", password.Text);
 
+            
+            
+            command.ExecuteNonQuery();
+            */
+    
 
-                this.Hide();
+            this.Hide();
             MainWindow mainwindow = new MainWindow();
             mainwindow.Show();
 
