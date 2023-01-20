@@ -196,9 +196,9 @@
             this.labelgrade.ForeColor = System.Drawing.SystemColors.Control;
             this.labelgrade.Location = new System.Drawing.Point(186, 95);
             this.labelgrade.Name = "labelgrade";
-            this.labelgrade.Size = new System.Drawing.Size(80, 26);
+            this.labelgrade.Size = new System.Drawing.Size(77, 26);
             this.labelgrade.TabIndex = 5;
-            this.labelgrade.Text = "Оценка";
+            this.labelgrade.Text = "Баллов";
             // 
             // textBox_name
             // 

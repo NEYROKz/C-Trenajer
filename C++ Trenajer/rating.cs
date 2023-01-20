@@ -41,20 +41,18 @@ namespace C___Trenajer
 
         private void rating_Load(object sender, EventArgs e)
         {
-            addvaluedb();
+            
 
             firstgrade_label.Text = Convert.ToString(DataForm.grade1);
             secondgrade_label.Text = Convert.ToString(DataForm.grade2);
             thirdgrade_label.Text = Convert.ToString(DataForm.grade3);
             fourthgrade_label.Text = Convert.ToString(DataForm.grade4);
-
             totalgrades_label.Text = Convert.ToString(DataForm.allgrades);
 
 
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
-
-   
-
+            
+            
 
             SqlCommand command = new SqlCommand(
                 "SELECT name, surname FROM Students"
@@ -88,33 +86,7 @@ namespace C___Trenajer
         }
 
 
-        public void addvaluedb()
-        {
-            SqlConnection connz = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
-            try
-            {
-                connz.Open();
-                SqlCommand commandz = new SqlCommand(
-            $"INSERT INTO [Students] (name, surname) VALUES (@name, @surname) ",
-            connz);
-
-                commandz.Connection = connz;
-                commandz.Parameters.AddWithValue("name", DataForm.surnamez);
-                commandz.Parameters.AddWithValue("surname", DataForm.namez);
-
-                commandz.ExecuteNonQuery();
-              
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                connz.Close();
-            }
-            
-        }
+      
       
         public void openConnection()
         {

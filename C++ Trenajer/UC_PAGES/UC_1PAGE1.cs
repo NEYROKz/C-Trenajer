@@ -196,7 +196,7 @@ namespace C___Trenajer.UC_PAGES
                 
             if (textBox1.Text == answers)
             {
-                MessageBox.Show("Вверно");
+                MessageBox.Show("Верно");
                 right_answers++;
                 DataForm.grade1 = DataForm.grade1 + 1;
                 DataForm.allgrades = DataForm.allgrades + 1;

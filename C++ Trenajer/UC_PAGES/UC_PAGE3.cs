@@ -173,7 +173,7 @@ namespace C___Trenajer.UC_PAGES
             textBox1.ReadOnly = true;
             if (textBox1.Text == answers)
             {
-                MessageBox.Show("Вверно");
+                MessageBox.Show("Верно");
                 DataForm.grade3 = DataForm.grade3 + 1;
                 DataForm.allgrades = DataForm.allgrades + 1;
             }

@@ -14,6 +14,7 @@ namespace C___Trenajer.UC_PAGES
 {
     public partial class UC_PAGE4 : UserControl
     {
+        private SqlConnection sqlConnection = null;
         string answers;
 
         public UC_PAGE4()
@@ -23,7 +24,20 @@ namespace C___Trenajer.UC_PAGES
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Завершить процесс?", "Подтвердите действие", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            SqlCommand command = new SqlCommand(
+                  $"INSERT INTO [Students] (name, surname, answers) VALUES (@name, @surname, @answers) ",
+                  sqlConnection);
+
+            command.Connection = sqlConnection;
+            command.Parameters.AddWithValue("name", DataForm.namez);
+            command.Parameters.AddWithValue("surname", DataForm.surnamez);
+            command.Parameters.AddWithValue("answers", DataForm.allgrades);
+
+
+            command.ExecuteNonQuery();
+
+
+            DialogResult result = MessageBox.Show("Завершить работу?", "Подтвердите действие", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 rating rt = new rating();
@@ -35,7 +49,7 @@ namespace C___Trenajer.UC_PAGES
                 ;
             }
 
-  
+            
 
         }
 
@@ -89,8 +103,8 @@ namespace C___Trenajer.UC_PAGES
 
         private void UC_PAGE4_Load(object sender, EventArgs e)
         {
-
-
+            sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
+            sqlConnection.Open();
 
             string s;                         
             string[] tasks = new string[7];
@@ -271,7 +285,7 @@ namespace C___Trenajer.UC_PAGES
             textBox1.ReadOnly = true;
             if (textBox1.Text == answers)
             {
-                MessageBox.Show("Вверно");
+                MessageBox.Show("Верно");
                 DataForm.grade4 = DataForm.grade4 + 1;
                 DataForm.allgrades = DataForm.allgrades + 1;
             }

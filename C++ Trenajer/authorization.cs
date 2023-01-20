@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 
 namespace C___Trenajer
 {
+    
     public partial class authorization : Form
     {
         private SqlConnection sqlConnection = null;
@@ -23,7 +24,7 @@ namespace C___Trenajer
             
         }
 
-        
+       
      
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -38,30 +39,30 @@ namespace C___Trenajer
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            DataForm.surnamez = login.Text;
             DataForm.namez = password.Text;
+            DataForm.surnamez = login.Text;
 
             /*SqlCommand command = new SqlCommand(
-              $"INSERT INTO [Students] (name, surname) VALUES (@name, @surname) ",
-              sqlConnection);
+                  $"INSERT INTO [Students] (name, surname) VALUES (@name, @surname) ",
+                  sqlConnection);
 
             command.Connection = sqlConnection;
             command.Parameters.AddWithValue("name", login.Text);
             command.Parameters.AddWithValue("surname", password.Text);
 
-            
-            
+
+
             command.ExecuteNonQuery();
+
             */
-    
 
             this.Hide();
             MainWindow mainwindow = new MainWindow();
             mainwindow.Show();
 
-          if(login.Text == "admin")
+          if(login.Text == "adminz")
             {
-                if(password.Text == "admin")
+                if(password.Text == "adminz")
                 {
                     menu newform = new menu();
                     newform.Show();
@@ -74,13 +75,13 @@ namespace C___Trenajer
         {
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
             sqlConnection.Open();
-            
 
+            
 
             
         }
 
-        public void openConnection()
+       public void openConnection()
         {
             if (sqlConnection.State == System.Data.ConnectionState.Closed)
             {
@@ -94,6 +95,7 @@ namespace C___Trenajer
             {
                 sqlConnection.Close();
             }
+            
         }
 
         private void login_TextChanged(object sender, EventArgs e)

@@ -21,6 +21,8 @@ namespace C___Trenajer
             siticoneShadowForm1.SetShadowForm(this);
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
 
+
+
         }
         public void openConnection()
         {

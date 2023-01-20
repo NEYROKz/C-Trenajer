@@ -46,7 +46,7 @@ namespace C___Trenajer
             dataGridView1.Columns.Add("id", "id");
             dataGridView1.Columns.Add("name", "Имя");
             dataGridView1.Columns.Add("surname", "Фамилия");
-            dataGridView1.Columns.Add("answers", "Оценка");
+            dataGridView1.Columns.Add("answers", "Баллов");
 
         }
 
@@ -103,10 +103,9 @@ namespace C___Trenajer
         private void menu_Load(object sender, EventArgs e)
         {
             sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Database"].ConnectionString);
-
-
-
           
+
+
             CreateColumns();
             RefreshDataGrid(dataGridView1);
         }
